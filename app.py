@@ -2,7 +2,6 @@ from flask import Flask, render_template, session, redirect, url_for, flash, req
 import os
 from flask_sqlalchemy import SQLAlchemy
 import time, datetime
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'random string'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + 'database.sqlite'
@@ -11,8 +10,8 @@ db = SQLAlchemy(app)
 @app.route('/', methods=['GET','POST'])
 def login():
 
-    session['admin_id'] = user.admin_id
-    session['name'] = user.admin_name
+    session['admin_id'] = 1
+    session['name'] = 1
 
 
 
