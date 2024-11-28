@@ -5,6 +5,14 @@ from forms import Login, SearchBookForm, ChangePasswordForm, EditInfoForm, Searc
 from flask_login import UserMixin, LoginManager, login_required, login_user, logout_user, current_user
 import time, datetime
 
+# fork from https://github.com/lyric777/Book-Management-System
+
+# data store in data.sqlite
+""" 用pycharm浏览*.sqlite文件的方法：
+    安装插件 database navigator
+    视图->工具窗口->DB Browser
+    点击'+'新建连接->选择SQLite->修改Database files为data.sqlite的绝对路径（不加引号）->Test Connection->确定
+"""
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
